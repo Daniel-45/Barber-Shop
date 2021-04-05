@@ -1,0 +1,54 @@
+{
+    "servicios": [
+        {
+            "id": 1,
+            "nombre": "Corte de pelo caballero",
+            "precio": 15
+        },
+        {
+            "id": 2,
+            "nombre": "Corte de pelo niño",
+            "precio": 10
+        },
+        {
+            "id": 3,
+            "nombre": "Corte de pelo señora",
+            "precio": 18
+        },
+        {
+            "id": 4,
+            "nombre": "Arreglo de barba",
+            "precio": 8
+        },
+        {
+            "id": 5,
+            "nombre": "Peinado caballero",
+            "precio": 12
+        },
+        {
+            "id": 6,
+            "nombre": "Peinado señora",
+            "precio": 20
+        },
+        {
+            "id": 7,
+            "nombre": "Tinte",
+            "precio": 16
+        },
+        {
+            "id": 8,
+            "nombre": "Manicura permanente",
+            "precio": 28
+        },
+        {
+            "id": 9,
+            "nombre": "Lavado y corte caballero",
+            "precio": 18
+        },
+        {
+            "id": 10,
+            "nombre" : "Lavado y corte señora",
+            "precio": 23
+        }
+    ]
+}

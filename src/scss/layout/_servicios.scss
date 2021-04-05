@@ -1,0 +1,39 @@
+.listado-servicios {
+    @include tablet {
+        @include grid(2, 2rem);
+    }
+
+    .servicio {
+        margin-bottom: 2rem;
+        background-color: $blanco;
+        padding: $espaciado / 2;
+        border-radius: .4rem;
+
+        @include tablet {
+            margin-bottom: 0;
+        }
+
+        p {
+            margin: 0 0 $espaciado / 4 0;
+        }
+
+        .nombre-servicio {
+            color: $negro;
+        }
+
+        .precio-servicio {
+            color: $naranja;
+            font-weight: bold;
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        &.seleccionado {
+            background-color: $naranja;
+
+            p {
+                color: $blanco;
+            }
+        }
+    }
+}
