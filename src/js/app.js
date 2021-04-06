@@ -262,6 +262,9 @@ function mostrarResumen() {
         servicioPrecio.textContent = servicio.precio;
         servicioPrecio.classList.add('precio');
 
+        const totalServicios = servicio.precio.split('€');
+        cantidad += parseInt(totalServicios[0]);
+
         // Añadir nombre y precio al div
         contenedorServicio.appendChild(servicioTexto);
         contenedorServicio.appendChild(servicioPrecio);
@@ -274,6 +277,12 @@ function mostrarResumen() {
     resumenDiv.appendChild(fechaCita);
     resumenDiv.appendChild(horaCita);
     resumenDiv.appendChild(serviciosCita);
+
+    const total = document.createElement('P');
+    total.classList.add('total');
+    total.innerHTML = `<span>Total a pagar:</span> ${cantidad}€`;
+
+    resumenDiv.appendChild(total);
 }
 
 function nombreCita() {
@@ -320,8 +329,8 @@ function horaCita() {
         const horaCita = e.target.value;
         const hora = horaCita.split(':');
 
-        if (hora[0] < 9 || hora[0] > 19) {
-            showAlert('Hora no válida para la cita', 'error');
+        if (hora[0] < 9 || hora[0] >= 18) {
+            mostrarAlerta('Hora no válida para la cita. Las horas de cita son de 9:00 a 18:00', 'error');
             setTimeout(() => {
                 inputHora.value = '';
             }, 3000);

@@ -7,6 +7,11 @@
 .contenido-resumen {
     margin-bottom: $espaciado / 2 0;
 
+    h3 {
+        text-transform: uppercase;
+        font-size: 1.8;
+    }
+
     p {
         margin-bottom: .5rem;
 
@@ -30,4 +35,9 @@
             font-weight: bold;
         }
     }
+}
+
+.total {
+    text-align: right;
+    font-weight: bold;
 }
